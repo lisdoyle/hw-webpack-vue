@@ -8,3 +8,10 @@
 #### git add .
 #### git commit -m "内容描述"
 #### git push 
+
+## 制作首页app组件
+1. topbar tabbar 使用mui完成制作
+2. 中间区域放置了 router-view 展示内容
+3. 改造tabbar 为 router-link
+4. 设置路由高亮
+5. 点击tabbar 路由连接 切换 对应组件页面
