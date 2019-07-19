@@ -11,7 +11,8 @@ module.exports = {
   entry: './src/home.js',   //指定入口文件
   output: {      //指定出口文件
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    // publicPath:'/hw-webpack/03.webpack-cms/dist/' //服务器跟路径
   },
 
  //----------增加devServer属性-开始------
@@ -49,6 +50,7 @@ module.exports = {
         test:/\.(ttf|eot|svg|woff|woff2)$/,
         use :'url-loader'
       },
+      
       {
         test:/\.js$/,
         use :'babel-loader',
